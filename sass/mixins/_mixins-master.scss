@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1441px;
+$xxxl: 1800px;
+
+@mixin xs {
+	@media screen and (min-width: $xs) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media screen and (min-width: $sm) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media screen and (min-width: $md) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (min-width: $lg) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media screen and (min-width: $xl) {
+		@content;
+	}
+}
+
+@mixin xxl {
+	@media screen and (min-width: $xxl) {
+		@content;
+	}
+}
+
+@mixin xxxl {
+	@media screen and (min-width: $xxxl) {
+		@content;
+	}
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}

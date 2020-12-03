@@ -1,0 +1,288 @@
+.portfolio_carousel {
+
+  img {
+    width: 100%;
+  }
+
+  .swiper-slide {
+
+    &_details {
+      background: #242624;
+      @include md {
+        position: absolute;
+        top: 0;
+        left: 90px;
+      }
+      padding: 20px 20px 60px 20px;
+      transition: .5s;
+
+      &:hover {
+        background: #DB0812;
+        p.title {
+          color: #fff;
+          font-weight: 600;
+          margin-bottom: 0
+        }
+        p {
+          color: #fff;
+          margin-bottom: 0
+
+        }
+      }
+
+      p.title {
+        color: #DB0812;
+        font-weight: 600;
+        margin-bottom: 0;
+        transition: .5s;
+      }
+      p {
+        color: #fff;
+        margin-bottom: 0;
+        transition: .5s;
+
+      }
+
+      span {
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+        left: 20px;
+        font-size: 11px;
+        opacity: .25;
+      }
+    }
+
+
+
+  }
+
+  .swiper-pagination-bullets {
+    width: 8px;
+    position: absolute;
+    top: 20px;
+    left: auto !important;
+    right: 20px !important;
+    @include md {
+      top: 40px;
+      right: 80px !important;
+    }
+
+    width: 22px !important;
+  }
+
+}
+
+.front-service {
+
+  background: #fff;
+
+  &.service_two {
+    @include md {
+      text-align: right;
+    }
+
+  }
+
+
+
+  &_img {
+    @include md {
+      margin-top: -75px;
+    }
+    position: relative;
+    z-index: 9999;
+
+    &::after {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      right: 0;
+      bottom: 100px;
+      background: #fff;
+      content: " ";
+    }
+
+
+  }
+
+  &_img.service_two {
+    @include md {
+      margin-top: -75px;
+    }
+    position: relative;
+    z-index: 9999;
+
+    &::after {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      left: 0;
+      bottom: 100px;
+      background: #fff;
+      content: " ";
+    }
+
+
+  }
+
+  &_copy {
+    padding: 50px !important;
+    a {
+      color: #242624;
+      border-bottom: 16px #242624 solid;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+
+
+  h2 {
+    color: #DB0812;
+    font-size: 60px;
+    letter-spacing: -2px;
+    @include lg {
+      font-size: 100px;
+      letter-spacing: -5px;
+    }
+    @include xl {
+      font-size: 160px;
+      letter-spacing: -10px;
+    }
+    font-weight: 700;
+
+  }
+
+  p {
+    color: #9EA7AC;
+    strong {
+      font-weight: 700;
+      color: #DB0812;
+    }
+  }
+
+
+}
+
+.feat-project {
+  height: 350px;
+  @include md {
+    height: 480px;
+  }
+  background: #000;
+  position: relative;
+
+  &_overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &_details {
+    background: #242624;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    @include md {
+      left: 45px;
+    }
+    @include lg {
+      left: 90px;
+    }
+
+    padding: 20px 20px 60px 20px;
+    transition: .5s;
+
+    &:hover {
+      background: #DB0812;
+      p.title {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 0
+      }
+      p {
+        color: #fff;
+        margin-bottom: 0
+
+      }
+    }
+
+    p.title {
+      color: #DB0812;
+      font-weight: 600;
+      margin-bottom: 0;
+      transition: .5s;
+    }
+    p {
+      color: #fff;
+      margin-bottom: 0;
+      transition: .5s;
+
+    }
+
+    span {
+      position: absolute;
+      bottom: 20px;
+      color: #fff;
+      left: 20px;
+      font-size: 11px;
+      opacity: .25;
+    }
+  }
+
+
+}
+
+.front-cta {
+  padding: 50px 15px;
+  @include md {
+    padding: 100px 15px;
+  }
+  @include lg {
+    padding: 200px 15px;
+  }
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+  &_overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+  }
+
+  p, img {
+    display: inline;
+    z-index: 99999;
+    position: relative;
+  }
+
+  p {
+    font-size: 30px;
+    @include lg {
+      font-size: 50px;
+    }
+    text-shadow: 0px 0px 15px #000;
+  }
+
+  img {
+    margin-top: 50px;
+    display: none;
+    @include md {
+      display: inline;
+      margin-top: 0;
+      margin-left: 50px;
+    }
+
+  }
+
+}

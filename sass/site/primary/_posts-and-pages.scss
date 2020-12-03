@@ -1,0 +1,145 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.links {
+	ul {
+		padding: 0;
+		margin: 0;
+		display: block;
+		li {
+			list-style: none;
+			display: block !important;
+			a {
+				display: block;
+				color: rgba(0, 0, 0, 0.15);
+				text-transform: uppercase;
+				text-align: left;
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 1.0;
+				&:hover {
+					color: rgba(0, 0, 0, 1);
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+		li.current {
+			list-style: none;
+			a {
+				color: rgba(0, 0, 0, 1);
+				&:hover {
+					color: #DB0812;
+				}
+			}
+		}
+	}
+}
+
+.page-default {
+	padding-top: 30px;
+	padding-bottom: 80px;
+
+	h1.heading {
+		font-size: 100px;
+		@include xl {
+			font-size: 160px;
+		}
+		font-weight: 700;
+		color: #DB0812;
+		text-transform: lowercase;
+		letter-spacing: -10px;
+	}
+
+	h1, h2, h3, h4, h5 {
+		color: #DB0812;
+	}
+
+	.inbound-links {
+
+		ul {
+			padding: 0;
+			margin: 35px 0 0 0;
+			li {
+				display: block;
+		    margin-right: 40px;
+				@include lg {
+					display: inline-block;
+				}
+				a {
+					text-transform: uppercase;
+			    color: #C4080F;
+			    font-weight: 700;
+			    font-size: 20px;
+					&:hover {
+						color: #536874;
+
+						&:after {
+						    margin-top: 10px;
+						    display: block;
+						    content: "";
+						    width: 100px;
+						    height: 15px;
+						    background: #536874;
+						    transition: 0.5s;
+						}
+
+					}
+					&:after {
+					    margin-top: 10px;
+					    display: block;
+					    content: "";
+					    width: 100px;
+					    height: 15px;
+					    background: #C4080F;
+					    transition: 0.5s;
+					}
+				}
+
+				a.back {
+			    color: #536874;
+					&:hover {
+						color: #C4080F;
+
+						&:after {
+						    margin-top: 10px;
+						    display: block;
+						    content: "";
+						    width: 100px;
+						    height: 15px;
+						    background: #C4080F;
+						    transition: 0.5s;
+						}
+
+					}
+					&:after {
+					    background: #536874;
+					}
+				}
+
+			}
+		}
+	}
+
+}

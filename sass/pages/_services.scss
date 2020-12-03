@@ -1,0 +1,364 @@
+.page-template-page-services {
+
+  .page-default {
+    h1.heading {
+      color: #B1B1B1;
+    }
+  }
+
+
+
+}
+
+
+.services {
+
+  padding-bottom: 50px;
+
+  .offset-md-3 {
+    @include md {
+      padding-right: 0;
+    }
+  }
+
+
+
+  &-service {
+
+    margin-bottom: 15px;
+    @include md {
+      margin-bottom: 0px;
+    }
+    color: #000000;
+    border-right: 15px solid #EBEBEB;
+    &:last-of-type {
+      border-right: none;
+    }
+    p {
+      padding: 15px;
+      opacity: .4;
+      font-weight: 700;
+    }
+    p.service_title {
+      width: 90%;
+      word-wrap: break-word;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: .8em;
+      text-transform: uppercase;
+      letter-spacing: -10px;
+
+    }
+    img {
+      transition: .5s;
+    }
+    img.icon {
+      padding: 20px 10px 10px 10px;
+    }
+    a {
+      color: #000000;
+
+      &:hover {
+        color: #fff;
+        img {
+          opacity: .5;
+        }
+      }
+
+    }
+  }
+
+}
+
+
+.single-service {
+
+  padding-bottom: 50px;
+
+  &_wrapper {
+    padding-top: 50px;
+  }
+
+  h1.entry-title {
+    word-wrap: break-word;
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: none;
+    padding: 15px 0;
+    @include sm {
+      font-size: 60px;
+    }
+    @include lg {
+      font-size: 60px;
+      margin-bottom: 75px;
+      padding: 0;
+    }
+  }
+
+  &_cat {
+    padding: 15px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-size: 28px;
+    @include md {
+      font-size: 40px;
+      margin: 0;
+      line-height: 1em;
+      padding: 0;
+    }
+    @include lg {
+      font-size: 66px;
+      margin-top: 280px;
+    }
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.15);
+  }
+
+  .single-service-cat_icon {
+    @include md {
+      position: absolute;
+      background: #fff;
+      content: " ";
+      top: 0;
+      padding: 5px;
+      left: 50%;
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+    }
+
+
+  }
+
+  img.icon {
+    padding: 50px;
+    transform: scale(2);
+  }
+
+  &_content {
+
+
+    b, strong {
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+
+    &__cat {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: rgba(255, 255, 255, .5);
+      margin-bottom: 50px;
+      @include lg {
+        margin-bottom: 100px;
+      }
+
+    }
+
+    padding: 15px;
+    @include lg {
+      padding: 30px;
+    }
+    @include xl {
+      padding: 30px 60px;
+    }
+    @include xxl {
+      padding: 60px 90px;
+    }
+
+
+
+
+    p {
+      color: #fff;
+      font-weight: 300;
+    }
+
+    p.position {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      @include xxl {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+
+  &_gallery {
+
+    .project-gallery {
+      .swiper-pagination-bullets, .swiper-pagination-fraction, .swiper-pagination {
+        color: #fff;
+        position: absolute !important;
+        left: 45px !important;
+        bottom: 15px !important;
+        width: 50px !important;
+        z-index: 1;
+        font-weight: 600;
+      }
+
+      .swiper-button-prev-unique {
+        position: absolute;
+        bottom: 7.5px;
+        left: 15px;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: .5s;
+        &:hover {
+          color: #000;
+        }
+        }
+
+        .swiper-button-next-unique {
+          position: absolute;
+          bottom: 7.5px;
+          left: 100px;
+          width: calc(var(--swiper-navigation-size) / 44 * 27);
+          height: var(--swiper-navigation-size);
+          margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+          z-index: 10;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          transition: .5s;
+          &:hover {
+            color: #000;
+          }
+          }
+
+
+    }
+
+    &__bottom {
+      overflow: hidden;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      img {
+        width: 100%;
+        padding-bottom: 15px;
+        padding-right: 15px;
+      }
+
+
+
+    }
+
+
+
+  }
+
+  .inbound-links {
+
+    ul {
+      padding: 0;
+      margin: 35px 0 0 0;
+      li {
+        display: block;
+        margin-right: 40px;
+        @include lg {
+          display: inline-block;
+        }
+        a {
+          text-transform: uppercase;
+          color: #fff;
+          font-weight: 700;
+          font-size: 20px;
+          &:hover {
+            color: #000;
+
+            &:after {
+                margin-top: 10px;
+                display: block;
+                content: "";
+                width: 100px;
+                height: 15px;
+                background: #000;
+                transition: 0.5s;
+            }
+
+          }
+          &:after {
+              margin-top: 10px;
+              display: block;
+              content: "";
+              width: 100px;
+              height: 15px;
+              background: #fff;
+              transition: 0.5s;
+          }
+        }
+
+        a.back {
+          color: #000;
+          opacity: .5;
+          &:hover {
+            color: #000;
+            opacity: 1;
+
+            &:after {
+                margin-top: 10px;
+                display: block;
+                content: "";
+                width: 100px;
+                height: 15px;
+                background: #000;
+                transition: 0.5s;
+                opacity: 1;
+            }
+
+          }
+          &:after {
+              background: #000;
+              opacity: .5;
+          }
+        }
+
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #2B2B2B;
+    color: #fff;
+    text-align: center;
+    border-radius: 0;
+    padding: 20px;
+    .prev {
+      margin-right: 25px;
+      @include md {
+        margin-right: 50px;
+      }
+
+    }
+    .next {
+      margin-left: 25px;
+      @include md {
+        margin-left: 50px;
+      }
+
+    }
+     a {
+       color: #fff;
+       text-transform: uppercase;
+       font-weight: 600;
+       &:hover {
+         color: #DB0812;
+       }
+     }
+  }
+
+
+}

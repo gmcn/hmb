@@ -1,0 +1,139 @@
+.person {
+
+  img {
+    width: 100%;
+  }
+  .hover {
+    position: absolute;
+    background: rgba(36,38,36,.9);
+    padding: 30px;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    @include xxxl {
+      padding: 50px;
+      top: 50px;
+      left: 50px;
+      right: 50px;
+      bottom: 50px;
+    }
+
+    // display: none;
+    transition: .5s;
+    opacity: 0;
+    color: #fff;
+    p {
+      font-size: .75em;
+      @include xxl {
+        font-size: 1em;
+      }
+    }
+    p.position {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      @include xxl {
+        margin-bottom: 50px;
+      }
+    }
+    p.name {
+
+      font-weight: 700;
+      margin-bottom: 25px;
+      @include xxl {
+        margin-bottom: 50px;
+        font-size: 24px;
+      }
+    }
+    a {
+      color: #C4080F;
+      font-weight: 700;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 0;
+      background-color: #C4080F;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  &:hover {
+    .hover {
+      // display: block;
+      opacity: 1;
+    }
+  }
+
+}
+
+.years {
+  .year {
+    background: white;
+    text-align:center;
+    position: relative;
+      .inner {
+        font-size:60px;
+        text-align:center;
+        font-weight: bold;
+        color: #C4080F;
+        background: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        &.rotate {
+          -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+        }
+
+      }
+      &_desc {
+        p {
+          padding: 55px 15px 15px 15px;
+        }
+
+      }
+    }
+    img {
+      margin-top: 55px;
+    }
+}
+
+
+.description {
+  margin-top: 15px;
+    font-size:15px;
+    color: #536874;
+    font-weight: 500;
+  }
+  .timelinetext{
+    margin-top:5%;
+    margin-left: -15px;
+    color: #C4080F;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 15px;
+    font-weight:bold;
+  }
+  .timelinetexts{
+    margin-top:0%;
+    margin-left: -15px;
+    color: #C4080F;
+    text-align: left;
+    font-size: 20px;
+  }
+  .timelinemain{
+    margin-top:0%;
+    margin-left: -15px;
+    color: #536874;
+    text-align: left;
+    font-size: 20px;
+  }

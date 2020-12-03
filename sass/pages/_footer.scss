@@ -1,0 +1,195 @@
+footer {
+
+  .footer {
+
+    &-main {
+      color: #fff;
+      padding: 50px;
+      @include md {
+        padding: 150px 50px 130px;
+      }
+
+      background: #C4080F url(images/home_footerbg@2x.jpg) bottom left no-repeat;
+      background-size: cover;
+
+      p.title {
+        font-size: 38px;
+        color: #fff;
+        text-transform: none;
+        @include md {
+          font-size: 57px;
+        }
+        font-weight: 300;
+        line-height: 1em;
+        margin-bottom: 50px;
+        span {
+          font-weight: 700;
+          display: block;
+        }
+      }
+
+      p.contact {
+        font-size: 18px;
+        @include md {
+          font-size: 25px;
+        }
+
+      }
+
+      a {
+        font-weight: 700;
+        &:hover {
+          color: #000;
+        }
+      }
+
+      .nav {
+        margin-top: 50px;
+        @include md {
+          margin-top: 100px;
+        }
+
+      }
+
+      .sig {
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          font-size: 13px;
+          font-weight: 300;
+          position: relative;
+
+          a {
+            font-weight: 300;
+          }
+          li:first-of-type {
+            &:before {
+              position: absolute;
+              left: 0;
+              top: 0;
+              background: #fff;
+              content: " ";
+              height: 1px;
+              width: 8px;
+            }
+          }
+          li {
+            list-style: none;
+            text-transform: uppercase;
+            position: relative;
+            padding: 10px 0;
+            &:after {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              background: #fff;
+              content: " ";
+              height: 1px;
+              width: 8px;
+            }
+          }
+        }
+      }
+
+      .nav-wrap {
+        opacity: .6;
+        font-size: 14px;
+        margin-bottom: 50px;
+        @include md {
+          margin-bottom: 100px;
+        }
+
+        p {
+          font-weight: 600;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        a {
+          font-weight: 300;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        bottom: 0;
+        background: #fff;
+        content: " ";
+        @include md {
+          left: calc(50% + 15px);
+        }
+
+      }
+
+
+    }
+
+    &-back {
+      padding-top: 50px;
+      text-align: center;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+      }
+
+      a.byline {
+        position: absolute;
+        bottom: 25px;
+      }
+
+
+    }
+
+    &-social {
+      text-align: center;
+      background: #D4D4D4;
+      padding: 25px;
+      @include md {
+        padding: 50px 0 0 0;
+      }
+
+
+      img {
+        @include md {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 12px;
+        }
+
+      }
+
+      a.byline {
+        width: 100%;
+        color: #fff;
+        padding: 25px 0 0 0;
+        @include md {
+          position: absolute;
+          bottom: 25px;
+          width: auto;
+          padding: 0;
+        }
+
+        span {
+          display: block;
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  a {
+    color: #fff
+  }
+}
